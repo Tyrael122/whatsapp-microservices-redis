@@ -17,24 +17,24 @@ This project is a real-time chat application built using a **microservices archi
 ## Microservices
 
 ### 1. **User Microservice**
-- Handles user creation and user details.
-- **Endpoints**:
-    - `POST /users` - Create a new user.
-    - `GET /users/{userId}` - Retrieve user details.
+Handles user creation and user details.
+  - **Endpoints**:
+    - `POST /users`
+    - `GET /users/{id}`
 
 ### 2. **Chat Microservice**
-- Manages chat rooms and user participation.
-- **Endpoints**:
-    - `POST /chats` - Create a new chat room.
-    - `GET /chats/{chatId}` - Retrieve chat room details.
-    - `POST /chats/{chatId}/users` - Add a user to a chat room.
+Manages chat rooms and user participation.
+  - **Endpoints**:
+    - `POST /chats`
+    - `POST /chats/{chatId}/users`
+    - `GET /chats`
+    - `GET /chats/{chatId}/users`
 
 ### 3. **Message Routing Microservice**
-- Handles message reception and retrieval.
+Handles message reception and retrieval.
 - **Endpoints**:
-    - `POST /messages` - Receive a new message.
-    - `GET /messages/{chatId}` - Retrieve messages for a particular chat.
-
+    - `POST /message-router/chat/{chatId}/send`
+    - `GET /message-router/chat/{chatId}/messages`
 ---
 
 ## Technologies
