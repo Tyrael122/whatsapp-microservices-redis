@@ -47,9 +47,7 @@ Handles message reception and retrieval.
 ---
 
 ## Performance Comparison
-
-The load tests are designed to compare the performance of the system with and without Redis. The results will help in understanding the impact of Redis on the real-time message delivery and retrieval.
-
+The load tests are designed to compare the performance of the system with and without Redis. The results will help in understanding the impact of Redis on the message retrieval.
 
 ### Test description
 A chat room with 2 users is created, and 1000 messages are sent to it. Then, the message history is retrieved 10000 times.
