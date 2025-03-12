@@ -57,9 +57,12 @@ A chat room with 2 users is created, and 1000 messages are sent to it. Then, the
 #### Without Redis:
 - **Average Response Time**: 41.6 ms
 
+![Without Redis K6 result](https://github.com/user-attachments/assets/790afc1e-e206-4471-9847-739369fd962f)
+
 #### With Redis:
 - **Average Response Time**: 11.66 ms
 
+![With redis K6 result](https://github.com/user-attachments/assets/69fd78b4-3d62-459d-b967-f6a7af9fbce1)
 
 ---
 
